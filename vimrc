@@ -80,7 +80,7 @@ map <C-n> :NERDTreeToggle<CR>
 nmap <F7> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 " Some helpers to edit mode (http://vimcasts.org/e/14)
-let mapleader=','
+" let mapleader=','
 map <leader>ew :e <C-R>=expand("%:p:h") . "/" <CR>
 map <leader>es :sp <C-R>=expand("%:p:h") . "/" <CR>
 map <leader>ev :vsp <C-R>=expand("%:p:h") . "/" <CR>
