@@ -1,4 +1,12 @@
-myvim
-=====
+## Require
+#### exuberant-ctags
+ubuntu: sudo apt-get install exuberant-ctags
+mac: brew install ctags
+#### ack
+ubuntu: sudo apt-get install ack-grep
+mac: brew install ack
 
-my personal vim config
+## One Line Installation
+```
+bash <(wget -O- https://raw.githubusercontent.com/caok/myvim/master/install.sh)
+```
