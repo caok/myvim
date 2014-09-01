@@ -12,7 +12,6 @@ bash <(wget -O- https://raw.githubusercontent.com/caok/myvim/master/install.sh)
 ```
 
 ## Usage
-========
 ### update vim plugins
 
 * `:NeoBundleUpdate!`  - update vim plugins
