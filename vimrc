@@ -97,5 +97,10 @@ noremap <leader>a:  :Tabularize /:<cr>
 noremap <leader>a\| :Tabularize /\|<cr>
 noremap <leader>a>  :Tabularize /=><cr>
 
+" snippets
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
 " NeoBundle and bundles config
 source ~/.vim/neobundles.vim

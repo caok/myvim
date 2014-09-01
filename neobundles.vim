@@ -35,6 +35,10 @@ NeoBundle 'depuracao/vim-rdoc'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'slim-template/vim-slim'
+ 
+" snipmate
+NeoBundle 'SirVer/ultisnips'
+NeoBundle 'honza/vim-snippets'
 
 call neobundle#end()
 
