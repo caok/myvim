@@ -78,13 +78,8 @@ set pastetoggle=<F4>
 nnoremap <silent> <F4> :set nu!<CR>:set list!<CR>
 map <C-n> :NERDTreeToggle<CR>
 nmap <F7> :NERDTreeToggle<CR>
+let g:tagbar_autofocus=1
 nmap <F8> :TagbarToggle<CR>
-" Some helpers to edit mode (http://vimcasts.org/e/14)
-" let mapleader=','
-map <leader>ew :e <C-R>=expand("%:p:h") . "/" <CR>
-map <leader>es :sp <C-R>=expand("%:p:h") . "/" <CR>
-map <leader>ev :vsp <C-R>=expand("%:p:h") . "/" <CR>
-map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
 " ctrlp
 let g:ctrlp_map = '<c-p>'
@@ -92,6 +87,15 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 " tab键的自动完成现在会忽略这些
 set wildignore+=tmp/*,*/tmp/*,*.so,*.swp,*.zip,*.o,*.obj,*.bak,*.exe,.git
+
+" tabular
+noremap <leader>a,  :Tabularize /,<cr>
+noremap <leader>a#  :Tabularize /#<cr>
+noremap <leader>a=  :Tabularize /=<cr>
+noremap <leader>a== :Tabularize /==<cr>
+noremap <leader>a:  :Tabularize /:<cr>
+noremap <leader>a\| :Tabularize /\|<cr>
+noremap <leader>a>  :Tabularize /=><cr>
 
 " NeoBundle and bundles config
 source ~/.vim/neobundles.vim
