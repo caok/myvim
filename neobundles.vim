@@ -25,6 +25,8 @@ NeoBundle 'tpope/vim-repeat'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'mattn/emmet-vim'  
+NeoBundle 'godlygeek/tabular' 
 
 " filetype syntax highlight
 NeoBundle 'groenewege/vim-less'

@@ -29,6 +29,12 @@ bash <(wget -O- https://raw.githubusercontent.com/caok/myvim/master/install.sh)
 
 ### Formatting
 
-* `<F4>`  - toggle paste mode (insert mode)
-* `\cc` - comment out
-* `\c<SPACE>` - reverting comment out
+* `<F4>`            - toggle paste mode (insert mode)
+* `\cc`             - comment out
+* `\c<SPACE>`       - reverting comment out
+* `:Tab /{pattern}` - spilt and align line code by {pattern}, see :h Tabular
+* `<c-y>,`          - [Emmet](https://github.com/emmetio/emmet) (formerly Zen Coding)
+
+* `ysiw"` - Wrap a word with double quotation, `wor*d` => `"wor*d"`, more `:h surround`
+* `yss-`  - `wor*d` => `<% wor*d -%>`
+* `yss=`  - `wor*d` => `<%= wor*d %>`
