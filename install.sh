@@ -1,6 +1,5 @@
-git clone https://github.com/caok/myvim.git ~/vimfiles
-ln -s ~/vimfiles ~/.vim
-echo "source ~/.vim/vimrc" > ~/.vimrc
+git clone https://github.com/caok/myvim.git ~/.vim
+ln -s ~/.vim/vimrc ~/.vimrc
 
 cd ~/.vim
 mkdir -p ~/.vim/bundle
