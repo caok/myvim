@@ -81,6 +81,36 @@ nmap <F7> :NERDTreeToggle<CR>
 let g:tagbar_autofocus=1
 nmap <F8> :TagbarToggle<CR>
 
+" edit mapping
+let mapleader=','
+map <leader>gr :topleft :split config/routes.rb<cr>
+map <leader>gg :topleft 100 :split Gemfile<cr>
+map <leader>gs :topleft :split db/schema.rb<cr>
+inoremap <leader>rm :Rmodel 
+nnoremap <leader>rm :Rmodel 
+inoremap <leader>rc :Rcontroller 
+nnoremap <leader>rc :Rcontroller 
+inoremap <leader>rv :Rview 
+nnoremap <leader>rv :Rview 
+inoremap <leader>rh :Rhelper
+nnoremap <leader>rh :Rhelper 
+inoremap <leader>rs :Rspec 
+nnoremap <leader>rs :Rspec
+  
+noremap <leader>h ^
+noremap <leader>l $
+    
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
+
+" Some helpers to edit mode (http://vimcasts.org/e/14)
+map <leader>ew :e <C-R>=expand("%:p:h") . "/" <CR>
+map <leader>es :sp <C-R>=expand("%:p:h") . "/" <CR>
+map <leader>ev :vsp <C-R>=expand("%:p:h") . "/" <CR>
+map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
+
 " ctrlp
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
