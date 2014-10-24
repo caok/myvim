@@ -29,14 +29,14 @@ bash <(wget -O- https://raw.githubusercontent.com/caok/myvim/master/install.sh)
 ### Formatting
 
 * `<F4>`      - toggle paste mode (insert mode)
-* `\cc`       - comment out
-* `\c<SPACE>` - reverting comment out
+* `,cc`       - comment out
+* `,c<SPACE>` - reverting comment out
 * `<c-y>,`    - [Emmet](https://github.com/emmetio/emmet) (formerly Zen Coding)
 
-* `\a=`  - spilt and align line code by `=`
-* `\a>`  - spilt and align line code by `=>`
-* `\a==` - spilt and align line code by `==`
-* `\a|`  - spilt and align line code by `|`
+* `,a=`  - spilt and align line code by `=`
+* `,a>`  - spilt and align line code by `=>`
+* `,a==` - spilt and align line code by `==`
+* `,a|`  - spilt and align line code by `|`
 * `:Tab /{pattern}` - spilt and align line code by {pattern}, see :h Tabular
 
 * `ysiw"` - Wrap a word with double quotation, `wor*d` => `"wor*d"`, more `:h surround`

@@ -80,6 +80,7 @@ map <C-n> :NERDTreeToggle<CR>
 nmap <F7> :NERDTreeToggle<CR>
 let g:tagbar_autofocus=1
 nmap <F8> :TagbarToggle<CR>
+let g:Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 
 " edit mapping
 let mapleader=','
@@ -131,6 +132,25 @@ noremap <leader>a>  :Tabularize /=><cr>
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" OPEN FILES IN DIRECTORY OF CURRENT FILE
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+map <leader>e :edit %%
+map <leader>v :view %%
+
+" rename current file
+function! RenameFile()
+  let old_name = expand('%')
+  let new_name = input('New file name: ', expand('%'))
+  if new_name != '' && new_name != old_name
+    exec ':saveas ' . new_name
+    exec ':silent !rm ' . old_name
+    redraw!
+  endif
+endfunction
+map <leader>n :call RenameFile()<cr>
 
 " NeoBundle and bundles config
 source ~/.vim/neobundles.vim
