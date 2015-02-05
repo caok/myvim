@@ -97,6 +97,10 @@ inoremap <leader>rh :Rhelper
 nnoremap <leader>rh :Rhelper 
 inoremap <leader>rs :Rspec 
 nnoremap <leader>rs :Rspec
+inoremap <leader>= <%=  %><esc>hhi
+inoremap <leader>- <%  %><esc>hhi
+nnoremap <leader>= i<%=  %><esc>hhi
+nnoremap <leader>- i<%  %><esc>hhi
   
 noremap <leader>h ^
 noremap <leader>l $
