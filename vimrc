@@ -56,8 +56,10 @@ set noswapfile
 syntax enable
 syntax on
 " 指定配色方案为256色
-set t_Co=256
-color seoul256
+"set t_Co=256
+"color seoul256
+set background=dark
+colorscheme solarized
 
 " 检测文件类型
 filetype on
