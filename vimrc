@@ -89,16 +89,16 @@ let mapleader=','
 map <leader>gr :topleft :split config/routes.rb<cr>
 map <leader>gg :topleft 100 :split Gemfile<cr>
 map <leader>gs :topleft :split db/schema.rb<cr>
-inoremap <leader>rm :Rmodel 
-nnoremap <leader>rm :Rmodel 
-inoremap <leader>rc :Rcontroller 
-nnoremap <leader>rc :Rcontroller 
-inoremap <leader>rv :Rview 
-nnoremap <leader>rv :Rview 
-inoremap <leader>rh :Rhelper
-nnoremap <leader>rh :Rhelper 
-inoremap <leader>rs :Rspec 
-nnoremap <leader>rs :Rspec
+inoremap <leader>rm :Emodel 
+nnoremap <leader>rm :Emodel 
+inoremap <leader>rc :Econtroller 
+nnoremap <leader>rc :Econtroller 
+inoremap <leader>rv :Eview 
+nnoremap <leader>rv :Eview 
+inoremap <leader>rh :Ehelper
+nnoremap <leader>rh :Ehelper 
+inoremap <leader>rs :Espec 
+nnoremap <leader>rs :Espec
 inoremap <leader>= <%=  %><esc>hhi
 inoremap <leader>- <%  %><esc>hhi
 nnoremap <leader>= i<%=  %><esc>hhi
