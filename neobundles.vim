@@ -29,16 +29,10 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'godlygeek/tabular' 
 
 " filetype syntax highlight
-NeoBundle 'groenewege/vim-less'
-NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'depuracao/vim-rdoc'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'tpope/vim-haml'
-NeoBundle 'slim-template/vim-slim'
- 
-" snipmate
-NeoBundle 'SirVer/ultisnips'
-NeoBundle 'honza/vim-snippets'
+NeoBundle 'pangloss/vim-javascript'
 
 call neobundle#end()
 
