@@ -20,6 +20,7 @@ bash <(wget -O- https://raw.githubusercontent.com/caok/myvim/master/install.sh)
 
 * `<F3>`             - use word under cursor as pattern to find all matching in the current file
 * `<F4>`             - toggle line number in normal mode, toggle paste mode in insert mode
+* `<F5>`             - toggle ctags -R
 * `<F7>`             - toggle NERDTree window
 * `<F8>`             - toggle tagbar window
 * `<C-p>`            - fuzzy matching, features like Ctrl-p in textMate
@@ -42,3 +43,10 @@ bash <(wget -O- https://raw.githubusercontent.com/caok/myvim/master/install.sh)
 * `ysiw"` - Wrap a word with double quotation, `wor*d` => `"wor*d"`, more `:h surround`
 * `yss-`  - `wor*d` => `<% wor*d -%>`
 * `yss=`  - `wor*d` => `<%= wor*d %>`
+
+### Others
+
+* `,yy`       - copy content into system clipboard
+* `zR`        - 打开所有折叠  
+* `zM`        - 关闭所有折叠  
+* `za`        - 当光标在关闭折叠上时，打开之。在打开折叠上时，关闭之
