@@ -72,12 +72,14 @@ filetype plugin indent on
 " extension
 "-----------------
 " 快捷键
-" search & replace current word under cursor
+" F3 search & replace current word under cursor
 nnoremap <F3> /<c-r><c-w><cr>
 " F4 toggle for paste, Insert Mode
 set pastetoggle=<F4>
 " toggle for copy & paste, Normal Mode
 nnoremap <silent> <F4> :set nu!<CR>:set list!<CR>
+" F5 toggle for ctags
+nnoremap <f5> :!ctags -R<cr>
 map <C-n> :NERDTreeToggle<CR>
 nmap <F7> :NERDTreeToggle<CR>
 let g:tagbar_autofocus=1
@@ -103,6 +105,10 @@ inoremap <leader>= <%=  %><esc>hhi
 inoremap <leader>- <%  %><esc>hhi
 nnoremap <leader>= i<%=  %><esc>hhi
 nnoremap <leader>- i<%  %><esc>hhi
+
+"复制到系统剪贴板
+"vmap "+y :w !pbcopy<CR><CR>
+vmap <leader>yy :w !pbcopy<CR><CR>
   
 noremap <leader>h ^
 noremap <leader>l $
